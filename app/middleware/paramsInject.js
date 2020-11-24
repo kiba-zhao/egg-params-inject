@@ -10,7 +10,7 @@ const { get } = require('lodash');
 module.exports = opts => {
   const injectParams = opts || {};
 
-  return (ctx, next) => {
+  return async (ctx, next) => {
     const params = ctx.params || {};
     for (let key in injectParams) {
 
@@ -22,7 +22,7 @@ module.exports = opts => {
     }
 
     ctx.params = params;
-    next();
+    await next();
 
   };
 
