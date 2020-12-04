@@ -3,7 +3,7 @@
 
 ## 安装 ##
 ```bash
-npm install git+ssh://git@github.com:kiba-zhao/egg-params-inject.git --save
+npm install git://github.com:kiba-zhao/egg-params-inject.git --save
 ```
 
 ## 启用 ##
